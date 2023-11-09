@@ -1,38 +1,75 @@
+:root {
+  --layer-1-bg: #41413c;
+  --layer-2-bg: #585451;
+  --layer-3-bg: #cfcfcf;
+  --layer-1-fg: #585451;
+  --layer-2-fg: #ededed;
+  --layer-3-fg: #0a0a0a;
+  --active-fg: #d13f3f;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .App {
-  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: larger;
+  /* 400, 500, 700 */
+  font-weight: 300;
+  color: var(--layer-3-bg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header {
+  background-color: var(--layer-1-bg);
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  box-shadow: 0px 2px .5em #909090;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Nav-Element{
+  color: var(--layer-2-fg);
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav-Element button {
+  border: none;
+  padding: 0;
+  margin: 5px;
+  border-bottom: solid 2px transparent;
+  transition: border 100ms linear;
+  background: none;
+  font-size: inherit;
+  color: var(--layer-2-fg);
+}
+
+.Nav-Element button:hover {
+  border-color: var(--layer-2-fg);
+}
+
+.Body {
+  height: 95vh;
+}
+
+.Sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: var(--layer-2-bg);
+  color: var(--layer-2-fg);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Footer {
+  height: 200px;
+  background-color: var(--layer-1-bg);
+  color: var(--layer-2-fg);
 }
