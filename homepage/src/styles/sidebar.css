@@ -1,0 +1,35 @@
+.side {
+    height: 100%;
+    width: 100%;
+    background-color: var(--layer-2-bg);
+    color: var(--layer-1-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.side ul{
+    padding: 0;
+    list-style: none;
+}
+
+.side a {
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.side li{
+    margin: 1rem;
+    height: 2rem;
+    background-color: var(--layer-2-fg);
+    box-shadow: -1px 1px 5px var(--layer-1-bg);
+}
+
+.side li.active {
+    color: var(--active-fg);
+}
