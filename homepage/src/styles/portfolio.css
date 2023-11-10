@@ -1,0 +1,19 @@
+.Portfolio {
+    min-height: 100vh;
+    display: flex;
+}
+
+.Sidebar {
+    min-height: 100vh;
+    width: 200px;
+    background-color: var(--layer-2-bg);
+    color: var(--layer-2-fg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Content {
+    min-height: 100vh;
+    width: 100%;
+}

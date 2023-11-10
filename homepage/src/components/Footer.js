@@ -1,5 +1,4 @@
 export default function Footer() {
-    return <footer className="nav">
-        
+    return <footer className="foot">
     </footer>
 }

@@ -1,18 +1,5 @@
-:root {
-    --layer-1-bg: #41413c;
-    --layer-2-bg: #585451;
-    --layer-3-bg: #cfcfcf;
-    --layer-1-fg: #585451;
-    --layer-2-fg: #ededed;
-    --layer-3-fg: #0a0a0a;
-    --active-fg: #d13f3f;
-}
-
-body {
-    margin: 0;
-}
-
 .nav {
+    height: 100% ;
     background-color: var(--layer-1-bg);
     color: var(--layer-2-fg);
     display: flex;
@@ -51,4 +38,8 @@ body {
 .nav li:hover {
     color: var(--active-fg);
     border-color: var(--active-fg);
+}
+
+.author {
+    all: unset;
 }

@@ -8,18 +8,6 @@
   --active-fg: #d13f3f;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html::-webkit-scrollbar {
-  display: none;
-}
-html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
 .App {
   font-family: 'Montserrat', sans-serif;
   font-size: larger;
@@ -28,16 +16,14 @@ html {
   color: var(--layer-3-bg);
 }
 
-.Body {
-  height: 1rem;
+.Navbar {
+  height: 5vh;
 }
 
-.Sidebar {
-  height: 100%;
-  width: 200px;
-  background-color: var(--layer-2-bg);
-  color: var(--layer-2-fg);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.Body {
+  min-height: 100vh;
+}
+
+.Footer {
+  height: 10vh;
 }
