@@ -1,0 +1,58 @@
+:root {
+    --layer-1-bg: #41413c;
+    --layer-2-bg: #585451;
+    --layer-3-bg: #cfcfcf;
+    --layer-1-fg: #585451;
+    --layer-2-fg: #ededed;
+    --layer-3-fg: #0a0a0a;
+    --active-fg: #d13f3f;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.nav {
+    background-color: var(--layer-1-bg);
+    color: var(--layer-2-fg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav li {   
+    margin: .25rem;
+    border-bottom: solid 2px transparent;
+    transition: border 100ms linear;
+}
+
+.nav li.active {
+    color: var(--active-fg);
+}
+
+.nav li:hover {
+    color: var(--active-fg);
+    border-color: var(--active-fg);
+}

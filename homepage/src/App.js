@@ -1,9 +1,15 @@
-import './App.css';
+import './styles/App.css';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import News from './pages/News';
+import Portfolio from './pages/Portfolio';
+import About from './pages/About';
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="Header">
+      {/* <header className="Header">
         <div className= "Nav-Element">
           <button>
             Home
@@ -22,7 +28,6 @@ function App() {
           TRISTAN ANDERSON
         </div>
       </header>
-      {/* Body div is temporary. to be replaced with different pages using routers */}
       <div className="Body">
         <div className="Sidebar">
 
@@ -33,7 +38,17 @@ function App() {
       </div>
       <footer className="Footer">
 
-      </footer>
+      </footer> */}
+
+      <Navbar></Navbar>
+      <div className='container'>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/news' element={<News />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
+      </div>
     </div>
   );
 }
