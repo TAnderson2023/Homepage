@@ -8,10 +8,6 @@
     --active-fg: #d13f3f;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
 }
