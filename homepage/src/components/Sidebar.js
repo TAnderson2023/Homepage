@@ -1,4 +1,6 @@
-import CustomLink from "./CustomLink"
+import CustomLink from "./CustomLink";
+
+import './sidebar.css'
 export default function Sidebar() {
     return <div className='side'>
         <ul>

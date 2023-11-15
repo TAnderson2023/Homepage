@@ -1,4 +1,5 @@
-import CustomLink from "./CustomLink"
+import CustomLink from "./CustomLink";
+import './navbar.css';
 export default function Navbar() {
     return <nav className="nav">
         <ul>
