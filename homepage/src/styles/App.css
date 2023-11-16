@@ -27,3 +27,11 @@
 .Footer {
   height: 10vh;
 }
+
+p {
+  color: var(--active-fg);
+  font-size: large;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem 5rem;
+}

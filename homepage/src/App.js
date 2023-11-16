@@ -22,7 +22,7 @@ function App() {
       <div className='Body'>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/portfolio' element={<Portfolio />} />
+          <Route path='/portfolio/*' element={<Portfolio />} />
           <Route path='/news' element={<News />} />
           <Route path='/about' element={<About />} />
         </Routes>
