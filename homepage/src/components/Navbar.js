@@ -1,13 +1,9 @@
-import CustomLink from "./CustomLink";
-import './navbar.css';
-export default function Navbar() {
+import './navbar.css'
+export default function Navbar({children, author}) {
     return <nav className="nav">
         <ul>
-            <CustomLink to='/'>Home</CustomLink>
-            <CustomLink to='/portfolio'>Portfolio</CustomLink>
-            <CustomLink to='/news'>News</CustomLink>
-            <CustomLink to='/about'>About</CustomLink>
+            {children}
         </ul>
-        <p className="author">TRISTAN ANDERSON</p>
+        <p className='author' style={{display: !author ? 'none' : ''}}>{author}</p>
     </nav>
 }

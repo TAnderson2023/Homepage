@@ -6,12 +6,18 @@ import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
+import CustomLink from "./components/CustomLink";
 
 function App() {
   return (
     <div className="App">
       <div className='Navbar'>
-        <Navbar></Navbar>
+        <Navbar author='TRISTAN ANDERSON'>
+          <CustomLink to='/'>Home</CustomLink>
+          <CustomLink to='/portfolio'>Portfolio</CustomLink>
+          <CustomLink to='/news'>News</CustomLink>
+          <CustomLink to='/about'>About</CustomLink>
+        </Navbar>
       </div>
       <div className='Body'>
         <Routes>

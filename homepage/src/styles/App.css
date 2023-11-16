@@ -1,11 +1,11 @@
 :root {
-  --layer-1-bg: #41413c;
-  --layer-2-bg: #585451;
-  --layer-3-bg: #cfcfcf;
-  --layer-1-fg: #585451;
-  --layer-2-fg: #ededed;
-  --layer-3-fg: #0a0a0a;
+  --navbar-bg: #41413c;
+  --navbar-fg: #ededed;
   --active-fg: #d13f3f;
+  --layer-3-fg: #0a0a0a;
+  --layer-3-bg: #cfcfcf;
+  --layer-2-bg: #585451;
+  --layer-1-fg: #585451;
 }
 
 .App {

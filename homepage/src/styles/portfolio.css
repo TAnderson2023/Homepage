@@ -1,11 +1,11 @@
 .Portfolio {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
 .Sidebar {
-    min-height: 100vh;
-    min-width: 10rem;
+    height: 3vh;
 }
 
 .Content {

@@ -3,31 +3,34 @@
     width: 100%;
     background-color: var(--layer-2-bg);
     color: var(--layer-1-bg);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 .side ul{
-    padding: 0;
+    height: 100%;
+    padding: 0 .5rem;
+    margin: 0;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    flex-shrink: 0;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
-
+.side ul::-webkit-scrollbar{
+    display: none;
+}
 .side a {
     text-decoration: none;
     color: inherit;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: 500;
 }
 
-.side li{
-    margin: 1rem;
-    height: 2rem;
-    background-color: var(--layer-2-fg);
-    box-shadow: -1px 1px 5px var(--layer-1-bg);
+.side li {
+    color: var(--navbar-fg);
+    width: max-content;
 }
 
 .side li.active {

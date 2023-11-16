@@ -1,10 +1,8 @@
-import CustomLink from "./CustomLink";
-
 import './sidebar.css'
-export default function Sidebar() {
+export default function Sidebar({children}) {
     return <div className='side'>
         <ul>
-            <CustomLink to='/portfolio'>This Site</CustomLink>
+            {children}
         </ul>
     </div>
 }
